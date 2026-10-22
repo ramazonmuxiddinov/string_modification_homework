@@ -1,204 +1,288 @@
-# Welcome
-# string_modification_homework
+# Satrlarni o'zgartirish
 
-Automated grading of homework assignments and tests
-- fork this repository
-- solve the task
-- commit with proper message
-
-# Problems
 ## String01
 
-s, k va l string o'zgaruvchilari berilgan. S string matn hisoblanadi. k va l belgi. Sizning vazifangiz 
-k belgini l belgiga almashtiring:
+Matn berilgan. Undagi barcha `"a"` harflarini `"o"` harfiga almashtirib qaytaring (`replace()`).
 
-**Example 1:**
+**Misol 1:**
 
 ```Python
-Input: s="I am python devoloper", k='e', l='E'
-Output: "I am python dEvolopEr"
-
+Kirish: s="Allamurod Xakimov"
+Chiqarish: "Allomurod Xokimov"
 ```
 
-**Constraints:**
-
-  - 2 <= length(a) <= 10^5
+---
 
 ## String02
 
-s, k , l, n string o'zgaruvchilari berilgan. S string matn hisoblanadi. k va l belgi. n bu 
-butun son. k belgini l belgiga almashtiring faqat n tasini:
+Matn berilgan. Undagi barcha bo'sh joylarni `"_"` belgisiga almashtirib qaytaring (`replace()`).
 
-**Example 1:**
+**Misol 1:**
 
 ```Python
-Input: s="I am python devoloper", k='e', l='E', n=1
-Output:  "I am python dEvoloper"
-
+Kirish: s="Allamurod Xakimov Toshkent"
+Chiqarish: "Allamurod_Xakimov_Toshkent"
 ```
 
-**Constraints:**
-
-  - 2 <= length(a) <= 10^5
+---
 
 ## String03
 
-s string o'zgaruvchi berilgan.  Natija n ta belgidan iborat bo'ladi 
-Siz s string ni markazga joylashtiradigan dastur qilishingiz kerak. Yetmagan belgiga '*' joylashtiring.(center())
+Matn berilgan. Undagi birinchi `"-"` belgisini `"."` ga almashtiring, qolganlari o'zgarmasin (`replace()`, `count` parametri).
 
-**Example 1:**
+**Misol 1:**
 
 ```Python
-Input: s="abs", n=7
-Output: "**abc**"
-
+Kirish: s="15-03-2000"
+Chiqarish: "15.03-2000"
 ```
 
-**Constraints:**
-
-  - 2 <= length(a) <= 10^5
+---
 
 ## String04
 
-s string o'zgaruvchi berilgan.  Natija n ta belgidan iborat bo'ladi. 
-Siz s stringga chap qismiga "*" joylashtiradigan dastur qilishingiz kerak. (ljust())
+Ism va son `n` berilgan. Ismni uzunligi `n` bo'lgan satr markaziga joylashtiring, bo'sh joylar `"*"` bilan to'ldirilsin (`center()`).
 
-**Example 1:**
-
-```Python
-Input: s="abs", n=5
-Output: "abs**"
-
-```
-
-**Example 2:**
+**Misol 1:**
 
 ```Python
-Input: s="f", n=6
-Output: "f*****"
-
+Kirish: s="Allamurod", n=15
+Chiqarish: "***Allamurod***"
 ```
-**Constraints:**
 
-  - 2 <= length(a) <= 10^5
+---
 
 ## String05
 
-    s va l string o'zgaruvchilari berilgan. Siz s matnning ikki yonidan l belgini 
-    olib tashlaydigan  dastur qilishingiz kerak. (strip())
-**Example 1:**
+Ism va son `n` berilgan. Ismni chapga tekislab, o'ng tomonini `"."` bilan uzunlik `n` gacha to'ldiring (`ljust()`).
+
+**Misol 1:**
 
 ```Python
-Input: s="aziza", l='a'
-Output: "ziz"
-
+Kirish: s="Allamurod", n=14
+Chiqarish: "Allamurod....."
 ```
 
-**Example 2:**
-
-```Python
-Input: s="11python111", l='11' 
-Output: "python1"
-
-```
-**Constraints:**
-
-  - 2 <= length(a) <= 10^5
+---
 
 ## String06
 
-  s va l string o'zgaruvchilari berilgan. Siz s matnning chap  qismidan l belgini 
-  olib tashlaydigan  dastur qilishingiz kerak. (lstrip())
+Son satr ko'rinishida berilgan. Uni o'ngga tekislab, chap tomonini `"0"` bilan uzunlik `n` gacha to'ldiring (`rjust()`).
 
-**Example 1:**
-
-```Python
-Input: s="12345", l='1'
-Output: '2345'
-
-```
-
-**Example 2:**
+**Misol 1:**
 
 ```Python
-Input: s="aabbc", l='a'
-Output: 'bbc'
-
+Kirish: s="26", n=5
+Chiqarish: "00026"
 ```
-**Constraints:**
 
-  - 2 <= length(a) <= 10^5
+---
 
 ## String07
 
-s va l string o'zgaruvchilari berilgan. Siz s matnning o'ng  qismidan l belgini 
-olib tashlaydigan  dastur qilishingiz kerak. 
+Boshida va oxirida ortiqcha bo'sh joylari bor satr berilgan. Ikki tomondagi bo'sh joylarni olib tashlang (`strip()`).
 
-**Example 1:**
-
-```Python
-Input: s="aaaaabb", l='b'
-Output: 'aaaaa'
-
-```
-
-**Example 2:**
+**Misol 1:**
 
 ```Python
-Input: s="aaa",l='a'
-Output: ''
-
+Kirish: s="   Allamurod Xakimov   "
+Chiqarish: "Allamurod Xakimov"
 ```
-**Constraints:**
 
-  - 2 <= length(a) <= 10^5
+---
 
 ## String08
 
-   s  string o'zgaruvchi berilgan. Siz s matnda neshta so'z borligini aniqlang.
+Satr berilgan. Faqat chap tomonidagi bo'sh joylarni olib tashlang (`lstrip()`).
 
-**Example 1:**
-
-```Python
-Input: a="python code"
-Output: 2
-
-```
-
-**Example 2:**
+**Misol 1:**
 
 ```Python
-Input: a="it markaz 103"
-Output: 3
-
+Kirish: s="   Toshkent   "
+Chiqarish: "Toshkent   "
 ```
-**Constraints:**
 
-  - 2 <= length(a) <= 10^5
+---
 
 ## String09
 
-s string o'zgaruvchi berilgan.  Natija n ta belgidan iborat bo'ladi. 
-Siz s stringga o'ng qismiga "*" joylashtiradigan dastur qilishingiz kerak. (rjust())
-**Example 1:**
+Satr berilgan. Faqat o'ng tomonidagi bo'sh joylarni olib tashlang (`rstrip()`).
+
+**Misol 1:**
 
 ```Python
-Input: s="abs", n=5
-Output: '**abs'
-
+Kirish: s="   Toshkent   "
+Chiqarish: "   Toshkent"
 ```
 
-**Example 2:**
+---
+
+## String10
+
+Satr va belgi `k` berilgan. Satrning ikki tomonidagi `k` belgilarini olib tashlang (`strip()`).
+
+**Misol 1:**
 
 ```Python
-Input: s="python", n=8
-Output: '**python'
-
+Kirish: s="###Allamurod###", k="#"
+Chiqarish: "Allamurod"
 ```
-**Constraints:**
 
-  - 2 <= length(a) <= 10^5
+**Misol 2:**
 
-# Warning
-- don't copy other solutions or any solution
-- don't remove comments
+```Python
+Kirish: s="!!Python!", k="!"
+Chiqarish: "Python"
+```
+
+---
+
+## String11
+
+Allamurodning ismi ikki tomonida bo'sh joylar bilan, kichik harflarda kiritildi. Bo'sh joylarni olib tashlang, bosh harfini katta qiling va uzunligi 20 bo'lgan satr markaziga `"="` bilan joylashtiring (`strip()`, `capitalize()`, `center()`).
+
+**Misol 1:**
+
+```Python
+Kirish: s="   allamurod  "
+Chiqarish: "=====Allamurod======"
+```
+
+---
+
+## String12
+
+Telefon raqami bo'sh joy, chiziqcha va qavslar bilan yozilgan. Barcha `" "`, `"-"`, `"("` va `")"` belgilarini olib tashlab qaytaring (`replace()`).
+
+**Misol 1:**
+
+```Python
+Kirish: tel="+998 (90) 123-45-67"
+Chiqarish: "+998901234567"
+```
+
+---
+
+## String13
+
+Mahsulot nomi va narxi (satr) berilgan. Nomni 12 belgigacha `"."` bilan chapga, narxni 8 belgigacha bo'sh joy bilan o'ngga tekislab, birlashtirib qaytaring (`ljust()`, `rjust()`).
+
+**Misol 1:**
+
+```Python
+Kirish: nom="Non", narx="5000"
+Chiqarish: "Non.........    5000"
+```
+
+**Misol 2:**
+
+```Python
+Kirish: nom="Sut", narx="12000"
+Chiqarish: "Sut.........   12000"
+```
+
+---
+
+## String14
+
+Fayl nomi berilgan, oxirida ortiqcha bo'sh joylar va `.txt` kengaytmasi bor. Avval o'ng tomondagi bo'sh joylarni, so'ng `.txt` ni olib tashlab, faqat nomni qaytaring (`rstrip()`, `replace()`).
+
+**Misol 1:**
+
+```Python
+Kirish: fayl="allamurod_cv.txt   "
+Chiqarish: "allamurod_cv"
+```
+
+---
+
+## String15
+
+Tartib raqami satr ko'rinishida berilgan, boshida ortiqcha nollar bor. Chap tomondagi `"0"` larni olib tashlab, natijani `"ID: "` so'zi bilan qaytaring (`lstrip()`).
+
+**Misol 1:**
+
+```Python
+Kirish: s="000452"
+Chiqarish: "ID: 452"
+```
+
+**Misol 2:**
+
+```Python
+Kirish: s="0070"
+Chiqarish: "ID: 70"
+```
+
+---
+
+## String16
+
+Sana `"kun/oy/yil"` ko'rinishida berilgan. `"/"` belgilarini `"."` ga almashtiring va natijani uzunligi 16 bo'lgan satr markaziga `"-"` bilan joylashtiring (`replace()`, `center()`).
+
+**Misol 1:**
+
+```Python
+Kirish: sana="15/03/2000"
+Chiqarish: "---15.03.2000---"
+```
+
+---
+
+## String17
+
+Kichik harflarda yozilgan, ikki tomonida bo'sh joyi bor ism va familiya berilgan. Bo'sh joylarni olib tashlang, so'zlarni bosh harf bilan yozing va so'zlar orasidagi bo'sh joyni `"_"` ga almashtiring (`strip()`, `title()`, `replace()`).
+
+**Misol 1:**
+
+```Python
+Kirish: s="  allamurod xakimov "
+Chiqarish: "Allamurod_Xakimov"
+```
+
+---
+
+## String18
+
+Talaba ismi va bahosi (satr) berilgan. Ismni 10 belgigacha bo'sh joy bilan chapga, bahoni 3 belgigacha `"0"` bilan o'ngga tekislab, orasiga `" | "` qo'yib qaytaring (`ljust()`, `rjust()`).
+
+**Misol 1:**
+
+```Python
+Kirish: ism="Allamurod", baho="95"
+Chiqarish: "Allamurod  | 095"
+```
+
+**Misol 2:**
+
+```Python
+Kirish: ism="Ali", baho="7"
+Chiqarish: "Ali        | 007"
+```
+
+---
+
+## String19
+
+Matn berilgan, boshida `"*"`, oxirida `"!"` belgilari bor. Chapdan `"*"` larni, o'ngdan `"!"` larni olib tashlang va natijani katta harflarda qaytaring (`lstrip()`, `rstrip()`, `upper()`).
+
+**Misol 1:**
+
+```Python
+Kirish: s="***Salom Allamurod!!!"
+Chiqarish: "SALOM ALLAMUROD"
+```
+
+---
+
+## String20
+
+Login berilgan, ikki tomonida bo'sh joylar bor. Bo'sh joylarni olib tashlang, nuqtani `"_"` ga almashtiring, kichik harfga o'tkazing va natijani uzunligi 20 bo'lguncha o'ng tomondan `"#"` bilan to'ldiring (`strip()`, `replace()`, `lower()`, `ljust()`).
+
+**Misol 1:**
+
+```Python
+Kirish: s="  Allamurod.Xakimov "
+Chiqarish: "allamurod_xakimov###"
+```
+
