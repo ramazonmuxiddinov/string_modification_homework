@@ -6,4 +6,5 @@ def main(s):
     Qaytaradi:
         str: natija satri
     """
-    return
+    return s.capitalize().strip().center(20,"=")
+print(main("     ramazon    "))

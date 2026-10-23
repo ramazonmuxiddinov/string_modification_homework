@@ -6,4 +6,5 @@ def main(s):
     Qaytaradi:
         str: natija satri
     """
-    return
+    return s.replace('a','o')
+print(main("Muxiddinov Ramazon"))

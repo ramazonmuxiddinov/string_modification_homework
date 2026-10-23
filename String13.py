@@ -7,4 +7,6 @@ def main(nom, narx):
     Qaytaradi:
         str: natija satri
     """
-    return
+    return nom.ljust(12,".")+narx.rjust(8," ")
+print(main("Non","5000"))
+print(main("Sut","12000"))

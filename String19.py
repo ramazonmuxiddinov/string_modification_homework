@@ -6,4 +6,5 @@ def main(s):
     Qaytaradi:
         str: natija satri
     """
-    return
+    return s.lstrip("*").rstrip("!").upper()
+print(main("****saloM RAmaZon!!!!!!!!!"))

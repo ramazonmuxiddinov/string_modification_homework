@@ -6,4 +6,5 @@ def main(tel):
     Qaytaradi:
         str: natija satri
     """
-    return
+    return tel.replace(" ", "").replace("-", "").replace("(", "").replace(")", "")
+print(main("+998 (90) 123-45-67"))

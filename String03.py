@@ -6,4 +6,5 @@ def main(s):
     Qaytaradi:
         str: natija satri
     """
-    return
+    return  s.replace("-",".",1)
+print(main("04-10-2007"))

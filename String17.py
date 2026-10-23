@@ -6,4 +6,5 @@ def main(s):
     Qaytaradi:
         str: natija satri
     """
-    return
+    return s.strip().title().replace(" ","_")
+print(main("   ramazon muxidddinov   "))

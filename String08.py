@@ -6,4 +6,6 @@ def main(s):
     Qaytaradi:
         str: natija satri
     """
-    return
+    return s.lstrip()
+print(main("     Samarqand     "))
+

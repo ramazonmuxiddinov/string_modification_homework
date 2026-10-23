@@ -7,4 +7,7 @@ def main(ism, baho):
     Qaytaradi:
         str: natija satri
     """
-    return
+    return ism.ljust(10)+"| "+baho.rjust(3,"0")
+print(main("Ramazon","99"))
+print(main("Ali","77"))
+

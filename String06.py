@@ -7,4 +7,6 @@ def main(s, n):
     Qaytaradi:
         str: natija satri
     """
-    return
+    return s.rjust(n,"0")
+print(main("Ramazon",10))
+

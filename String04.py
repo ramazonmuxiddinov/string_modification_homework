@@ -7,4 +7,5 @@ def main(s, n):
     Qaytaradi:
         str: natija satri
     """
-    return
+    return s.center(n,'*')
+print(main("Ramazon",15))

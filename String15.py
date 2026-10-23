@@ -6,4 +6,5 @@ def main(s):
     Qaytaradi:
         str: natija satri
     """
-    return
+    return "ID:   "+s.lstrip("0")
+print(main("000452"))

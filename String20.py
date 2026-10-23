@@ -6,4 +6,5 @@ def main(s):
     Qaytaradi:
         str: natija satri
     """
-    return
+    return s.strip().replace(" ","_").lower().ljust(20,"#")
+print(main("  Ramazon.Muxiddinov "))

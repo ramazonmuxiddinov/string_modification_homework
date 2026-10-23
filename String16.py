@@ -6,4 +6,5 @@ def main(sana):
     Qaytaradi:
         str: natija satri
     """
-    return
+    return sana.replace("/",".").center(16,"-")
+print(main("04/10/2007"))

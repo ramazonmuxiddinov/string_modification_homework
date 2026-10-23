@@ -6,4 +6,6 @@ def main(s):
     Qaytaradi:
         str: natija satri
     """
-    return
+    return s.replace(' ','_')
+print(main("Muxiddinov Ramazon Samarqand"))
+

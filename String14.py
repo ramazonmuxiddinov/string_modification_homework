@@ -6,4 +6,5 @@ def main(fayl):
     Qaytaradi:
         str: natija satri
     """
-    return
+    return fayl.rstrip().replace(".txt","")
+print(main("ramazon_cv.txt"))

@@ -7,4 +7,6 @@ def main(s, k):
     Qaytaradi:
         str: natija satri
     """
-    return
+    return  s.strip(k)
+print(main("##########Ramazon######","#"))
+
